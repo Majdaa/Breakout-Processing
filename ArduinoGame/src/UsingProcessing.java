@@ -69,7 +69,7 @@ public class UsingProcessing extends PApplet{
     		gewonnen = true;
     	}
     	
-    	if(ball.getPosy() >= 680) {
+    	if(ball.getPosy() >= 620) {
     		leben--;
     		
     		if(leben == 0) {
