@@ -28,6 +28,10 @@ public class Spieler {
 		return this.posy;
 	}
 	
+	public void setPosx(int posx) {
+		this.posx = posx;
+	}
+	
 	public int getMittex() {
 		return this.mittex;
 	}

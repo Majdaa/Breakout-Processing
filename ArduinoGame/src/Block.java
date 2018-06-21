@@ -11,6 +11,8 @@ public class Block {
 	
 	private boolean active = true;
 	
+	//Um nicht zwei mal den Block in der Variable zu zählen, falls er deaktiviert ist
+	private boolean schonGezeahlt = false;
 	public Block(int posx, int posy, int breite, int hoehe) {
 		this.posx = posx;
 		this.posy = posy;
@@ -37,9 +39,15 @@ public class Block {
 	
 	public void setActive(boolean active) {
 		this.active = active;
-	}
-	
+	}	
 	public boolean getActive() {
 		return this.active;
+	}
+	
+	public void setSchonGezaehlt(boolean schonGezeahlt) {
+		this.schonGezeahlt = schonGezeahlt;
+	}	
+	public boolean getSchonGezaehlt() {
+		return this.schonGezeahlt;
 	}
 }
